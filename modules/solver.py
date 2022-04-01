@@ -8,9 +8,9 @@ import itertools
 import pandas as pd
 
 import importlib
-import find_admissible_sets as admissible_sets
-import find_matrix as find_matrix
-import operations_with_matrix as operations
+from modules import find_admissible_sets as admissible_sets
+from modules import find_matrix as find_matrix
+from modules import operations_with_matrix as operations
 
 
 def solver(current_matrix:pd.DataFrame, cards_on_table:dict, sets_taken=[], rows_removed=[], columns_removed=[],
