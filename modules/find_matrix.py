@@ -13,7 +13,7 @@ import numpy as np
 import itertools
 import pandas as pd
 
-import find_admissible_sets as admissible_sets
+from modules import find_admissible_sets as admissible_sets
 
 ###########
 ## Auxiliary functions
