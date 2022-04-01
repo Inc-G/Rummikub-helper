@@ -3,11 +3,10 @@ Helper for a variation of Rummikub, using tf object detection API
 
 The input is a picture of the tiles on the table and a string of the tiles in your hand (hand = the blue rummikub holder for tiles). The output is True if you can play, together with what you can play and how, False otherwise.
 
-The variation only involves how the jokers can be used. The valid sets are the same as those in classical Rummikub and the initial meld needs to have a value of 30 or more. But after you play the initial meld, there are only 3 rules.
-
-(i) By the end of your turn, each tile on the table has to belong to a unique admissible set.
-(ii) Each turn you must draw a single tile if and only if you don’t play, and
-(iii) You cannot put a tile from the table to your hand.
+The variation only involves how the jokers can be used. The valid sets are the same as those in classical Rummikub and the initial meld needs to have a value of 30 or more. But after you play the initial meld, there are only 3 rules:
+- By the end of your turn, each tile on the table has to belong to a unique admissible set.
+- Each turn you must draw a single tile if and only if you don’t play, and
+- You cannot put a tile from the table to your hand.
 
 This is slightly looser than the classical Rummikub, because you don’t have to specify which tile is the joker if it appears in a set with tiles of the same colour. For example, if on the table there are 3b, 4b, j and you have in your hand 1b, in classical Rummikub you cannot play if j represents a 5b. In this version you can as 1b, j, 3b, 4b is a valid set.
 
