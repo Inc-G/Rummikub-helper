@@ -10,7 +10,7 @@ The variation only involves how the jokers can be used. The valid sets are the s
 
 This is slightly looser than the classical Rummikub, because you don’t have to specify which tile is the joker if it appears in a set with tiles of the same colour. For example, if on the table there are 3b, 4b, j and you have in your hand 1b, in classical Rummikub you cannot play if j represents a 5b. In this version you can as 1b, j, 3b, 4b is a valid set.
 
-**USAGE**: Run Rummikub_main.py and follow the instructions. You need tensorflow >= 2.8, numpy, pandas, matplotlib. The modules and models folder should be in the same folder as Rummikub_main.py.
+**USAGE**: Run Rummikub_main.py and follow the instructions. You need tensorflow >= 2.7, numpy, pandas, matplotlib. The modules and models folder should be in the same folder as Rummikub_main.py.
 
 There are roughly two parts in this project: (1) an object detection and object classification part to get information from the pictures of the tiles on the table, and (2) a solver. Part (1) uses tensorflow object detection API together with two neural networks, and part (2) is a hard-coded python script. 
 
